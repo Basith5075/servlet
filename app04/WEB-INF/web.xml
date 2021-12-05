@@ -1,0 +1,39 @@
+<web-app>
+    <display-name>Context Application</display-name>
+        <context-param>
+            <param-name>Favourite Fruit</param-name>
+            <param-value>apple</param-value>
+        </context-param>
+        <context-param>
+            <param-name>Best Show</param-name>
+            <param-value>Big Boss</param-value>
+        </context-param>
+        <context-param>
+            <param-name>Best Player</param-name>
+            <param-value>Virat Kohli</param-value>
+        </context-param>
+          <servlet>
+                <servlet-name>Config2</servlet-name>
+                <servlet-class>ServletConfigTest</servlet-class>
+                <init-param>
+                    <param-name>ConfigServlet2</param-name>
+                    <param-value>From ConfigServlet two</param-value>
+                </init-param>
+         </servlet>
+        <servlet>
+            <servlet-name>contextTest1</servlet-name>
+            <servlet-class>ContextTest</servlet-class>
+            <init-param>
+                        <param-name>ContextServlet1</param-name>
+                        <param-value>From ContextServlet one</param-value>
+            </init-param>
+        </servlet>
+        <servlet-mapping>
+            <servlet-name>contextTest1</servlet-name>
+            <url-pattern>/context</url-pattern>
+              </servlet-mapping>
+               <servlet-mapping>
+            <servlet-name>Config2</servlet-name>
+            <url-pattern>/config</url-pattern>
+        </servlet-mapping>
+</web-app>

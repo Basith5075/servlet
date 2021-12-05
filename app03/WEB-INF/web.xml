@@ -1,0 +1,28 @@
+<web-app>
+    <servlet>
+        <servlet-name>ServletConfig</servlet-name>
+        <servlet-class>ServletConfigDemo</servlet-class>
+        <init-param>
+            <param-name>driver</param-name>
+            <param-value>com.sun.mysql.cn.jdbc</param-value>
+        </init-param>
+        <init-param>
+            <param-name>URL</param-name>
+            <param-value>jdbc://mysql:3306/example</param-value>
+        </init-param>
+        <init-param>
+            <param-name>UserName</param-name>
+            <param-value>root100</param-value>
+        </init-param>
+        <init-param>
+            <param-name>Password</param-name>
+            <param-value>Trimax@30019</param-value>
+        </init-param>
+         </servlet>
+        <servlet-mapping>
+            <servlet-name>ServletConfig</servlet-name>
+            <url-pattern>/servcont</url-pattern>
+            <url-pattern>*.do</url-pattern>
+        </servlet-mapping>
+   
+</web-app>
